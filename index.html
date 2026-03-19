@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Memento</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=UnifrakturMaguntia&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="grain"></div>
+
+  <header id="topbar" class="topbar hidden">
+    <div class="topbar-level">
+      <span class="level-badge" id="level-badge">Nv.1</span>
+      <div class="xp-wrap">
+        <div class="xp-bar"><div class="xp-fill" id="xp-fill"></div></div>
+        <span class="xp-label" id="xp-label">0 / 100 XP</span>
+      </div>
+    </div>
+    <div class="topbar-currencies">
+      <span class="currency" id="hud-coins">🪙 0</span>
+      <span class="currency" id="hud-stars">⭐ 0</span>
+    </div>
+  </header>
+
+  <main id="main"></main>
+
+  <nav id="bottomnav" class="bottomnav hidden">
+    <button class="nav-btn active" id="nav-home"     onclick="App.navigate('home')">
+      <span class="nav-icon">🏠</span><span class="nav-label">Accueil</span>
+    </button>
+    <button class="nav-btn" id="nav-frise"    onclick="App.navigate('frise')">
+      <span class="nav-icon">📜</span><span class="nav-label">Frise</span>
+    </button>
+    <button class="nav-btn" id="nav-boutique" onclick="App.navigate('boutique')">
+      <span class="nav-icon">🏪</span><span class="nav-label">Boutique</span>
+    </button>
+    <button class="nav-btn" id="nav-profil"   onclick="App.navigate('profil')">
+      <span class="nav-icon">🏅</span><span class="nav-label">Profil</span>
+    </button>
+  </nav>
+
+  <!-- Core -->
+  <script src="registre.js"></script>
+
+  <!-- Evenements -->
+  <script src="egypte.js"></script>
+  <script src="grece.js"></script>
+  <script src="rome.js"></script>
+  <script src="feodalite.js"></script>
+  <script src="croisades.js"></script>
+  <script src="jeanne-darc.js"></script>
+  <script src="grandes-decouvertes.js"></script>
+  <script src="humanisme.js"></script>
+  <script src="reforme.js"></script>
+  <script src="revolution-francaise.js"></script>
+  <script src="napoleon.js"></script>
+  <script src="revolution-industrielle.js"></script>
+  <script src="ww1.js"></script>
+  <script src="ww2.js"></script>
+  <script src="guerre-froide.js"></script>
+
+  <!-- App -->
+  <script src="boutique.js"></script>
+  <script src="frise.js"></script>
+  <script src="profil.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>
